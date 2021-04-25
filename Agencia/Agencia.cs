@@ -13,21 +13,26 @@ namespace Agencia
         //private alojamientoAgencia = new Alojamiento[];
         //private List<Alojamiento> misAlojamientos;
         private int cantAlojamientos;
-        private const int MAX_ALOJ = 10;
+        private Alojamiento prueba;
+        //private const int MAX_ALOJ = 10;
 
         public Agencia(int CantidadAlojamientos)
         {
             
-            alojamientoAgencia = new Alojamiento[Agencia.MAX_ALOJ];
+            alojamientoAgencia = new Alojamiento[CantidadAlojamientos];
             cantAlojamientos = CantidadAlojamientos;
         }
+
+
+
+    
 
         public bool insertarAlojamiento(Alojamiento aloj)
         {
             foreach (Alojamiento a in alojamientoAgencia) { 
                if (a != null && a.igualCodigo(aloj))
                    return false;
-            for (int i = 0; i > 10; i++) { 
+            for (int i = 0; i > cantAlojamientos; i++) { 
                    alojamientoAgencia[i] = aloj; }
 
             }
@@ -63,13 +68,26 @@ namespace Agencia
         ademas para que crea una nueva agencia y le asigna un nuevo alojamiento si en la nueva agencia no esta pasando las referencias de la otra agencia*/
         public Agencia soloHoteles()
         {
-            Agencia Salida = new Agencia(this.cantAlojamientos);
-            //foreach (Alojamiento a in alojamientoAgencia)
-            //    if (a is Hotel)
-            //        Salida.insertarAlojamiento(a);
+            Agencia Salida = new Agencia(cantAlojamientos);
             foreach (Alojamiento a in alojamientoAgencia)
             {
-                if (a is Hotel)
+               if (a != null  && a is Hotel)
+                {
+                    //Console.WriteLine(a.ToString());
+                    Salida.insertarAlojamiento(a);
+                  
+
+                }
+            }
+            return Salida;         
+               
+        }
+        public Agencia soloCabañas()
+        {
+            Agencia Salida = new Agencia(this.cantAlojamientos);
+            foreach (Alojamiento a in alojamientoAgencia)
+            {
+                if (a != null && a is Cabaña)
                 {
                     Console.WriteLine(a.ToString());
                     Salida.insertarAlojamiento(a);
@@ -78,10 +96,8 @@ namespace Agencia
             }
             return Salida;
 
-           
-            
-           
         }
+
         //Aca pasa lo mismo que en el metodo anterior -> soloHoteles()
         public Agencia masEstrellas(int cant)
         {
@@ -95,31 +111,71 @@ namespace Agencia
         //Aca pasa lo mismo que en el metodo anterior -> soloHoteles()
         public Agencia cabañasEntrePrecios(float d, float h)
         {
-            Agencia Salida = new Agencia(this.cantAlojamientos);
-            foreach (Alojamiento a in alojamientoAgencia)
-                if (a is Cabaña)
-                {
-                    Cabaña c = (Cabaña)a;
-                    if (c.getPrecioPorPersona() <= h && c.getPrecioPorPersona() >= d)
-                        Salida.insertarAlojamiento(c);
-                }
+            //Agencia Salida = new Agencia(this.cantAlojamientos);
+            //foreach (Alojamiento a in alojamientoAgencia)
+            //    if (a is Cabaña)
+            //    {
+            //        Cabaña c = (Cabaña)a;
+            //        if (c.getPrecioPorPersona() <= h && c.getPrecioPorPersona() >= d)
+            //        {
+            //            Salida.insertarAlojamiento(c);
+            //        }
 
-            return Salida;
+            //    }
+
+            //return Salida;
+            //Alojamiento[] alo;
+            Agencia A2 = new Agencia(this.cantAlojamientos);
+            for (int a=0; a< alojamientoAgencia.Length; a++)
+            {
+                
+                
+                if( alojamientoAgencia[a] is Cabaña)
+                {
+                    A2.insertarAlojamiento(alojamientoAgencia[a]);
+                    Console.WriteLine(alojamientoAgencia[a].ToString());
+
+                }
+             }
+            return A2;
         }
 
         public int getCantidad() { return cantAlojamientos; }
         public void setCantidad(int CantAlojamientos) { cantAlojamientos = CantAlojamientos; }
 
 
-        //error tira que la "a" fue null
+      
+
         public Alojamiento[] getAlojamientos()
         {
-         
-                return alojamientoAgencia.OrderBy(a => a.getEstrellas()).ThenBy(a => a.getCantPersonas()).ThenBy(a => a.getCodigo()).ToArray();
-            
+
+            Alojamiento[] aux;
             
 
+            aux = new Alojamiento[cantAlojamientos];
+
+
+            for (int i = 0; i < cantAlojamientos; i++)
+            {
+                if(aux != null) {
+
+                    aux[i] = alojamientoAgencia[i];
+                    //Console.WriteLine(alojamientoAgencia[i].ToString());
+                    Console.WriteLine("Repeticiones :" + i);
+                }
+
+                // return aux;
+            }
+
+            return aux;
+
+           
+
+
+            //return aux.OrderBy(a => a.getEstrellas()).ThenBy(a => a.getCantPersonas()).ThenBy(a => a.getCodigo()).ToArray();
         }
+
+
 
     }
 }

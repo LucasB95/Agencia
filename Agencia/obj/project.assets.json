@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lu_kp\\source\\repos\\Agencia\\Agencia\\Agencia.csproj",
+      "projectUniqueName": "C:\\Users\\lu_kp\\OneDrive\\Escritorio\\Agencia\\Agencia\\Agencia.csproj",
       "projectName": "Agencia",
-      "projectPath": "C:\\Users\\lu_kp\\source\\repos\\Agencia\\Agencia\\Agencia.csproj",
+      "projectPath": "C:\\Users\\lu_kp\\OneDrive\\Escritorio\\Agencia\\Agencia\\Agencia.csproj",
       "packagesPath": "C:\\Users\\lu_kp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lu_kp\\source\\repos\\Agencia\\Agencia\\obj\\",
+      "outputPath": "C:\\Users\\lu_kp\\OneDrive\\Escritorio\\Agencia\\Agencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lu_kp\\AppData\\Roaming\\NuGet\\NuGet.Config",

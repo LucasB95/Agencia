@@ -11,3 +11,16 @@ C:\Users\lu_kp\source\repos\Agencia\Agencia\obj\Debug\netcoreapp3.1\Agencia.cspr
 C:\Users\lu_kp\source\repos\Agencia\Agencia\obj\Debug\netcoreapp3.1\Agencia.dll
 C:\Users\lu_kp\source\repos\Agencia\Agencia\obj\Debug\netcoreapp3.1\Agencia.pdb
 C:\Users\lu_kp\source\repos\Agencia\Agencia\obj\Debug\netcoreapp3.1\Agencia.genruntimeconfig.cache
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\bin\Debug\netcoreapp3.1\Agencia.exe
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\bin\Debug\netcoreapp3.1\Agencia.deps.json
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\bin\Debug\netcoreapp3.1\Agencia.runtimeconfig.json
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\bin\Debug\netcoreapp3.1\Agencia.runtimeconfig.dev.json
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\bin\Debug\netcoreapp3.1\Agencia.dll
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\bin\Debug\netcoreapp3.1\Agencia.pdb
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\obj\Debug\netcoreapp3.1\Agencia.csprojAssemblyReference.cache
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\obj\Debug\netcoreapp3.1\Agencia.AssemblyInfoInputs.cache
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\obj\Debug\netcoreapp3.1\Agencia.AssemblyInfo.cs
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\obj\Debug\netcoreapp3.1\Agencia.csproj.CoreCompileInputs.cache
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\obj\Debug\netcoreapp3.1\Agencia.dll
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\obj\Debug\netcoreapp3.1\Agencia.pdb
+C:\Users\lu_kp\OneDrive\Escritorio\Agencia\Agencia\obj\Debug\netcoreapp3.1\Agencia.genruntimeconfig.cache

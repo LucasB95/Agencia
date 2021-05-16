@@ -44,11 +44,13 @@ namespace Agencia
             Console.WriteLine("Ingrese Estrellas: ");
             estrellas = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("¿Solicita televisor?: ");
+            Console.WriteLine("Cantidad de personas: ");
             cantPersonas = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Ingrese si tiene TV: ");
             tv = Convert.ToBoolean(Console.ReadLine());
+         
+            
 
             Console.WriteLine("Ingrese Precio por persona: ");
             precioPorPersona = Convert.ToSingle(Console.ReadLine());

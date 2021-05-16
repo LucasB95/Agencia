@@ -53,8 +53,6 @@ namespace Agencia
 
         public bool estaAlojamiento(Alojamiento aloj)
         {
-
-
             for (int i = 0; i < alojamientoAgencia.Length; i++)
             {
                 if (aloj.getCodigo() == alojamientoAgencia[i].getCodigo())
@@ -113,7 +111,7 @@ namespace Agencia
                 {
                     Console.WriteLine(hayAloj[i].ToString());
                     return true;
-                }
+                } 
 
             }
 
@@ -139,7 +137,6 @@ namespace Agencia
 
         }
 
-
         public Agencia masEstrellas(int cant)
         {
             Agencia Salida = new Agencia(this.cantAlojamientos);
@@ -155,7 +152,7 @@ namespace Agencia
             return Salida;
         }
 
-        //Arreglar este metodo
+
         public Agencia cabañasEntrePrecios(float d, float h)
         {
             Agencia A2 = new Agencia(this.cantAlojamientos);
@@ -169,7 +166,11 @@ namespace Agencia
                         {
                             A2.insertarAlojamiento(c);
                             Console.WriteLine(c.ToString());
-                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("No se encontraron Cabañas con el rango de precio buscado");
+                    }
 
 
                     }
@@ -191,16 +192,10 @@ namespace Agencia
 
         }
 
-        //hacer q el return de orderby ande el resto funciona
         public Alojamiento[] getAlojamientos()
         {
-
             Alojamiento[] aux;
-
-
             aux = new Alojamiento[cantAlojamientos];
-
-
             for (int i = 0; i < alojamientoAgencia.Length; i++)
             {
                 if (alojamientoAgencia[i] != null)
@@ -208,12 +203,12 @@ namespace Agencia
 
                     aux[i] = alojamientoAgencia[i];
                     Console.WriteLine(alojamientoAgencia[i].ToString());
-                    //Console.WriteLine("Repeticiones :" + i);
+              
                 }
-                // return aux;
+              
             }
             return aux;
-            //return aux.OrderBy(a => a.getEstrellas()).ThenBy(a => a.getCantPersonas()).ThenBy(a => a.getCodigo()).ToArray();
+            //return aux.OrderBy(x => x.getEstrellas()).ThenBy(x => x.getCantPersonas()).ThenBy(x => x.getCodigo()).ToArray();
         }
     }
 }

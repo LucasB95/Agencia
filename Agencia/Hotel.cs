@@ -29,7 +29,7 @@ namespace Agencia
             bool Tv = tv;
             float PrecioPP =precioPorPersona;
 
-            Console.WriteLine("Ingrese Codigo: ");
+            Console.WriteLine("Ingrese Codigo de Hotel: ");
             codigo = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Ingrese Nombre: ");
@@ -47,11 +47,9 @@ namespace Agencia
             Console.WriteLine("Cantidad de personas: ");
             cantPersonas = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Ingrese si tiene TV: ");
-            tv = Convert.ToBoolean(Console.ReadLine());
-         
+            Console.WriteLine("Ingrese si tiene TV con true('si') o false('no') :");
+            tv = Convert.ToBoolean(Console.ReadLine());       
             
-
             Console.WriteLine("Ingrese Precio por persona: ");
             precioPorPersona = Convert.ToSingle(Console.ReadLine());
 
